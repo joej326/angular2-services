@@ -7,10 +7,15 @@ import { AppComponent } from './app.component';
 import { AccountComponent } from './account/account.component';
 import { NewAccountComponent } from './new-account/new-account.component';
 
-//if you inject a service into a component it becomes accessible to that component and all of it's children
+//if you inject a service into a component that instance is available to that component and all of it's children
 //and all of it's children's children.
-// this means that injecting it into the app.module will make the service available to the
+// this means that injecting it into the app.module will make the instance available to the
 // entire app.
+
+//if a service is injected into the app component (not the app module) then the instance
+// application-wide but not available to other services.
+
+//An instance of a class simply is a copy which was created using the class as a blueprint.
 
 @NgModule({
   declarations: [
